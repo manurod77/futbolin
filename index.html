@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Futbolín AR WebXR</title>
+  <title>Futbolín AR Procedural</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Three.js -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <!-- ARButton y loaders (sin GLTFLoader) -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/webxr/ARButton.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"></script>
+  <!-- cannon-es para físicas -->
+  <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"></script>
   <style>
     body { margin: 0; overflow: hidden; }
-    button { position: absolute; top: 20px; left: 20px; z-index: 1; }
+    canvas { display: block; }
   </style>
 </head>
 <body>
