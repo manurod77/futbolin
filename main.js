@@ -1,6 +1,7 @@
-import * as THREE from 'three';
-import { ARButton } from 'three/examples/jsm/webxr/ARButton.js';
-import * as CANNON from 'cannon-es';
+// Importing Three.js, ARButton, and Cannon.js with proper relative paths
+import * as THREE from './node_modules/three/build/three.module.js';
+import { ARButton } from './node_modules/three/examples/jsm/webxr/ARButton.js';
+import * as CANNON from './node_modules/cannon-es/dist/cannon-es.js';
 
 let camera, scene, renderer;
 let controller, reticle, localRef;
