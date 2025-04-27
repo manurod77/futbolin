@@ -2,20 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Futbolín AR Procedural</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Three.js -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-  <!-- ARButton y loaders (sin GLTFLoader) -->
+  <meta name="description" content="Futbolín AR Procedural - A web-based AR experience leveraging Three.js and Cannon.js for physics.">
+  <link rel="preload" href="./main.js" as="script">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Futbolín AR Procedural</title>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" 
+          integrity="sha384-<hash>" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/webxr/ARButton.js"></script>
-  <!-- cannon-es para físicas -->
   <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"></script>
-  <style>
-    body { margin: 0; overflow: hidden; }
-    canvas { display: block; }
-  </style>
 </head>
-<body>
+<body role="application">
+  <noscript>
+    <p>JavaScript is required to view this AR experience. Please enable JavaScript in your browser settings.</p>
+  </noscript>
   <script type="module" src="./main.js"></script>
 </body>
 </html>
